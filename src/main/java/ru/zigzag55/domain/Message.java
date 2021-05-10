@@ -15,6 +15,8 @@ public class Message {
 
     private String tag;
 
+    private User author;
+
     public Message() {
     }
 
@@ -25,6 +27,14 @@ public class Message {
 
     public Integer getId() {
         return id;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
     }
 
     public void setId(Integer id) {
